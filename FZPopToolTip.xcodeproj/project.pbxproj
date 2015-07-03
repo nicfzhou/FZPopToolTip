@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E00BD1311B44C7970037A624 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E00BD1301B44C7970037A624 /* main.m */; };
+		E00BD1341B44C7970037A624 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E00BD1331B44C7970037A624 /* AppDelegate.m */; };
+		E00BD1371B44C7970037A624 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E00BD1361B44C7970037A624 /* ViewController.m */; };
+		E00BD13A1B44C7970037A624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00BD1381B44C7970037A624 /* Main.storyboard */; };
+		E00BD13C1B44C7970037A624 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00BD13B1B44C7970037A624 /* Images.xcassets */; };
+		E00BD13F1B44C7970037A624 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00BD13D1B44C7970037A624 /* LaunchScreen.xib */; };
+		E00BD14B1B44C7970037A624 /* FZPopToolTipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E00BD14A1B44C7970037A624 /* FZPopToolTipTests.m */; };
+		E00BD1571B44C8630037A624 /* FZPopToolTip.m in Sources */ = {isa = PBXBuildFile; fileRef = E00BD1561B44C8630037A624 /* FZPopToolTip.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E00BD1451B44C7970037A624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E00BD1231B44C7970037A624 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00BD12A1B44C7970037A624;
+			remoteInfo = FZPopToolTip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E00BD12B1B44C7970037A624 /* FZPopToolTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZPopToolTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00BD12F1B44C7970037A624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00BD1301B44C7970037A624 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E00BD1321B44C7970037A624 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E00BD1331B44C7970037A624 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E00BD1351B44C7970037A624 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E00BD1361B44C7970037A624 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E00BD1391B44C7970037A624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E00BD13B1B44C7970037A624 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E00BD13E1B44C7970037A624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E00BD1441B44C7970037A624 /* FZPopToolTipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZPopToolTipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00BD1491B44C7970037A624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00BD14A1B44C7970037A624 /* FZPopToolTipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZPopToolTipTests.m; sourceTree = "<group>"; };
+		E00BD1551B44C8630037A624 /* FZPopToolTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZPopToolTip.h; sourceTree = "<group>"; };
+		E00BD1561B44C8630037A624 /* FZPopToolTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZPopToolTip.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E00BD1281B44C7970037A624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BD1411B44C7970037A624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E00BD1221B44C7970037A624 = {
+			isa = PBXGroup;
+			children = (
+				E00BD12D1B44C7970037A624 /* FZPopToolTip */,
+				E00BD1471B44C7970037A624 /* FZPopToolTipTests */,
+				E00BD12C1B44C7970037A624 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E00BD12C1B44C7970037A624 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E00BD12B1B44C7970037A624 /* FZPopToolTip.app */,
+				E00BD1441B44C7970037A624 /* FZPopToolTipTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E00BD12D1B44C7970037A624 /* FZPopToolTip */ = {
+			isa = PBXGroup;
+			children = (
+				E00BD1541B44C84A0037A624 /* FZPopToolTip */,
+				E00BD1321B44C7970037A624 /* AppDelegate.h */,
+				E00BD1331B44C7970037A624 /* AppDelegate.m */,
+				E00BD1351B44C7970037A624 /* ViewController.h */,
+				E00BD1361B44C7970037A624 /* ViewController.m */,
+				E00BD1381B44C7970037A624 /* Main.storyboard */,
+				E00BD13B1B44C7970037A624 /* Images.xcassets */,
+				E00BD13D1B44C7970037A624 /* LaunchScreen.xib */,
+				E00BD12E1B44C7970037A624 /* Supporting Files */,
+			);
+			path = FZPopToolTip;
+			sourceTree = "<group>";
+		};
+		E00BD12E1B44C7970037A624 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E00BD12F1B44C7970037A624 /* Info.plist */,
+				E00BD1301B44C7970037A624 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E00BD1471B44C7970037A624 /* FZPopToolTipTests */ = {
+			isa = PBXGroup;
+			children = (
+				E00BD14A1B44C7970037A624 /* FZPopToolTipTests.m */,
+				E00BD1481B44C7970037A624 /* Supporting Files */,
+			);
+			path = FZPopToolTipTests;
+			sourceTree = "<group>";
+		};
+		E00BD1481B44C7970037A624 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E00BD1491B44C7970037A624 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E00BD1541B44C84A0037A624 /* FZPopToolTip */ = {
+			isa = PBXGroup;
+			children = (
+				E00BD1551B44C8630037A624 /* FZPopToolTip.h */,
+				E00BD1561B44C8630037A624 /* FZPopToolTip.m */,
+			);
+			path = FZPopToolTip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E00BD12A1B44C7970037A624 /* FZPopToolTip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00BD14E1B44C7970037A624 /* Build configuration list for PBXNativeTarget "FZPopToolTip" */;
+			buildPhases = (
+				E00BD1271B44C7970037A624 /* Sources */,
+				E00BD1281B44C7970037A624 /* Frameworks */,
+				E00BD1291B44C7970037A624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FZPopToolTip;
+			productName = FZPopToolTip;
+			productReference = E00BD12B1B44C7970037A624 /* FZPopToolTip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E00BD1431B44C7970037A624 /* FZPopToolTipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00BD1511B44C7970037A624 /* Build configuration list for PBXNativeTarget "FZPopToolTipTests" */;
+			buildPhases = (
+				E00BD1401B44C7970037A624 /* Sources */,
+				E00BD1411B44C7970037A624 /* Frameworks */,
+				E00BD1421B44C7970037A624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E00BD1461B44C7970037A624 /* PBXTargetDependency */,
+			);
+			name = FZPopToolTipTests;
+			productName = FZPopToolTipTests;
+			productReference = E00BD1441B44C7970037A624 /* FZPopToolTipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E00BD1231B44C7970037A624 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = MIT;
+				TargetAttributes = {
+					E00BD12A1B44C7970037A624 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					E00BD1431B44C7970037A624 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = E00BD12A1B44C7970037A624;
+					};
+				};
+			};
+			buildConfigurationList = E00BD1261B44C7970037A624 /* Build configuration list for PBXProject "FZPopToolTip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E00BD1221B44C7970037A624;
+			productRefGroup = E00BD12C1B44C7970037A624 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E00BD12A1B44C7970037A624 /* FZPopToolTip */,
+				E00BD1431B44C7970037A624 /* FZPopToolTipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E00BD1291B44C7970037A624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00BD13A1B44C7970037A624 /* Main.storyboard in Resources */,
+				E00BD13F1B44C7970037A624 /* LaunchScreen.xib in Resources */,
+				E00BD13C1B44C7970037A624 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BD1421B44C7970037A624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E00BD1271B44C7970037A624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00BD1371B44C7970037A624 /* ViewController.m in Sources */,
+				E00BD1341B44C7970037A624 /* AppDelegate.m in Sources */,
+				E00BD1311B44C7970037A624 /* main.m in Sources */,
+				E00BD1571B44C8630037A624 /* FZPopToolTip.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BD1401B44C7970037A624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00BD14B1B44C7970037A624 /* FZPopToolTipTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E00BD1461B44C7970037A624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00BD12A1B44C7970037A624 /* FZPopToolTip */;
+			targetProxy = E00BD1451B44C7970037A624 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E00BD1381B44C7970037A624 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E00BD1391B44C7970037A624 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E00BD13D1B44C7970037A624 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E00BD13E1B44C7970037A624 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E00BD14C1B44C7970037A624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E00BD14D1B44C7970037A624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E00BD14F1B44C7970037A624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FZPopToolTip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E00BD1501B44C7970037A624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FZPopToolTip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E00BD1521B44C7970037A624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FZPopToolTipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FZPopToolTip.app/FZPopToolTip";
+			};
+			name = Debug;
+		};
+		E00BD1531B44C7970037A624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FZPopToolTipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FZPopToolTip.app/FZPopToolTip";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E00BD1261B44C7970037A624 /* Build configuration list for PBXProject "FZPopToolTip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00BD14C1B44C7970037A624 /* Debug */,
+				E00BD14D1B44C7970037A624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00BD14E1B44C7970037A624 /* Build configuration list for PBXNativeTarget "FZPopToolTip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00BD14F1B44C7970037A624 /* Debug */,
+				E00BD1501B44C7970037A624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E00BD1511B44C7970037A624 /* Build configuration list for PBXNativeTarget "FZPopToolTipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00BD1521B44C7970037A624 /* Debug */,
+				E00BD1531B44C7970037A624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E00BD1231B44C7970037A624 /* Project object */;
+}
