@@ -10,6 +10,56 @@
 #import <objc/runtime.h>
 
 
+@interface UIView (Action)
+
+-(void) setTouchCondition:(FZViewTouchCondition) condition withTip:(FZPopToolTip*) tip;
+
+@end
+
+@implementation UIView (Action)
+
+static char* kAssociateTipKey = "fzpoptooltip";
+-(void) setTouchCondition:(FZViewTouchCondition)condition withTip:(FZPopToolTip *)tip{
+    objc_setAssociatedObject(self, &kAssociateTipKey, tip, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    id gr;
+    switch (condition) {
+        case FZViewTouchConditionDoubleClick:
+        case FZViewTouchConditionTouchUpInSide:
+            gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+            ((UITapGestureRecognizer*)gr).numberOfTapsRequired = condition==FZViewTouchConditionDoubleClick?2:1;
+            break;
+        case FZViewTouchConditionLongPressed:
+            gr = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+            break;
+        default:
+            break;
+    }
+    [self addGestureRecognizer:gr];
+    
+}
+
+-(void) handleGesture:(UIGestureRecognizer*)gr{
+    if ([gr isMemberOfClass:[UITapGestureRecognizer class]]) {
+        if (gr.state == UIGestureRecognizerStateEnded) {
+            FZPopToolTip* tip = objc_getAssociatedObject(self, &kAssociateTipKey);
+            if (tip) {
+                [tip showOnView:self];
+            }
+        }
+    }else if ([gr isMemberOfClass:[UILongPressGestureRecognizer class]]){
+        if (gr.state == UIGestureRecognizerStateBegan) {
+            FZPopToolTip* tip = objc_getAssociatedObject(self, &kAssociateTipKey);
+            if (tip) {
+                [tip showOnView:self];
+            }
+        }
+    }
+}
+
+@end
+
+
+
 
 @interface UIButton (Action)
 
@@ -20,6 +70,7 @@
 @implementation UIButton (Action)
 
 -(void) addTouchUpInSideAction:(void (^)())action{
+    [self removeTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
     if (action) {
         objc_setAssociatedObject(self, "touchupinsideAction", action, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         [self addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
@@ -32,7 +83,9 @@
 }
 
 -(void) dealloc{
+#if DEBUG
     NSLog(@"button dealoc");
+#endif
 }
 
 @end
@@ -79,18 +132,24 @@
 }
 
 -(void) dealloc{
+#if DEBUG
     NSLog(@"tooltip dealoc");
+#endif
 }
 -(void) addAction:(void(^)()) action forTitle:(NSString*) title{
     [_titleAndActions addObject:@[title,action]];
 }
 
 
--(void) showOnView:(UIView*) view{
+-(void) showOnView:(__weak UIView*) view{
     window = [UIApplication sharedApplication].keyWindow;
     [self drawOnView:view];
     _targetView = view;
     _targetView.userInteractionEnabled = NO;
+}
+
+-(void) showOnView:(__weak UIView *)view withTouchCondition:(FZViewTouchCondition) condition{
+    [view setTouchCondition:condition withTip:self];
 }
 
 -(void) dismiss{

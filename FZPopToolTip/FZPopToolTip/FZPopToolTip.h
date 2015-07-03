@@ -9,11 +9,20 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+
+typedef NS_ENUM(NSUInteger, FZViewTouchCondition) {
+    FZViewTouchConditionTouchUpInSide,
+    FZViewTouchConditionLongPressed,
+    FZViewTouchConditionDoubleClick,
+};
+
 @interface FZPopToolTip : UIView
 
 -(void) addAction:(void(^)()) action forTitle:(NSString*) title;
 
 -(void) showOnView:(UIView*) view;
+
+-(void) showOnView:(UIView *)view withTouchCondition:(FZViewTouchCondition) condition;
 
 -(void) dismiss;
 
