@@ -13,3 +13,13 @@
     
     
 tip在点击之后会自动消失，如果tip没有retain则会自动释放，如果被retain了，想再次使用，只要再调用一次showOnView即可（注意两次showonView的targetView必须要一致）
+
+
+
+快捷显示方式：
+
+    -(void) showOnView:(UIView *)view withTouchCondition:(FZViewTouchCondition) condition;
+
+调用后，指定view发送指定condition事件时才会弹出tip，事件包括长按、点按、双击事件；针对常用环境，使用更加便捷
+
+
